@@ -9,6 +9,7 @@
     },
     {
         "$project": {
+            "_id": 0,
             "title": 1,
             "comments": {
                 "name": 1,
