@@ -9,11 +9,13 @@
     },
     {
         "$project": {
-            "title": 1,  
-            "comments": 1
+            "title": 1,
+            "comments": {
+                "name": 1,
+                "email": 1,
+                "text": 1,
+                "date": 1
+            }
         }
-    },
-    {
-        "$unset":["_id", "comments._id", "comments.movie_id"]
     }
 ]
